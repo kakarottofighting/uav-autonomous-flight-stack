@@ -1,0 +1,19 @@
+<launch>
+
+  <node pkg="odom_fusion" type="odom_fusion_node" name="odom_fusion_node" output="screen" required = "true">
+    <remap from="~odom"      to="/Odometry"/>
+    <rosparam>
+      use_ukf: true
+      ukf:
+        alpha: 0.001
+        beta: 2.0
+        kappa: 0.0
+        process_pos_noise: 0.02
+        process_vel_noise: 0.20
+        odom_pos_noise: 0.05
+        height_noise: 0.03
+        max_dt: 0.05
+    </rosparam>
+  </node>
+
+</launch>

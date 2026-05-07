@@ -1,0 +1,28 @@
+# ROS/catkin build outputs
+build/
+devel/
+install/
+log/
+logs/
+.catkin_tools/
+
+# Runtime data and large sensor captures
+*.bag
+*.bag.active
+*.pcd
+*.ply
+
+# Python/cache files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local generated files
+*.log
+*.tmp

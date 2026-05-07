@@ -1,0 +1,9 @@
+ <launch>
+    <node pkg="tf" type="static_transform_publisher" name="world_to_map" args="0 0 0 0 0 0 /map /world 100" />
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find minimumsnap)/launch/visual.rviz" required="true" />
+    <node name="Minimumsnap" pkg="minimumsnap" type="MiniTest" output="screen">
+  
+
+    
+  </node>
+ </launch>
